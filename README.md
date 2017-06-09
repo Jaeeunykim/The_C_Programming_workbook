@@ -1,7 +1,7 @@
 # The_C_Programming_workbook
 ## 목적
 ![alt text](https://mediastream.cern.ch/MediaArchive/Photo/Public/1966/6607189/6607189/6607189-A5-at-72-dpi.jpg)
-![alt text](https://ww2.kqed.org/news/wp-content/uploads/sites/10/2016/01/RocketSpace64-1440x960.jpg =300x300)
+![alt text](https://ww2.kqed.org/news/wp-content/uploads/sites/10/2016/01/RocketSpace64-1440x960.jpg {width=40px height=400px})
 
 위의 사진 처럼 70년도의 개발모습과 현재의 개발모습이 확연히 다른 느낌을 풍기는데요
 현재의 개발자들에게 보이는 자유로운 모습이 과거 70년도의 개발자들과는 사뭇 달라보입니다
