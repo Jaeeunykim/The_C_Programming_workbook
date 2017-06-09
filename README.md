@@ -1,2 +1,5 @@
 # The_C_Programming_workbook
-This is a workbook for C programming.
+## 목적
+## 대상
+## 왜?
+## 읽는 방법
