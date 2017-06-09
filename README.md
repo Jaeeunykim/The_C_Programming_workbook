@@ -1,7 +1,7 @@
 # The_C_Programming_workbook
 ## 목적
 ![alt text](https://mediastream.cern.ch/MediaArchive/Photo/Public/1966/6607189/6607189/6607189-A5-at-72-dpi.jpg)
-<img src="https://ww2.kqed.org/news/wp-content/uploads/sites/10/2016/01/RocketSpace64-1440x960.jpg" alt="Drawing" style="width: 100px;"/>
+<img src="https://ww2.kqed.org/news/wp-content/uploads/sites/10/2016/01/RocketSpace64-1440x960.jpg" width="100" height="100" />
 ![alt text](https://ww2.kqed.org/news/wp-content/uploads/sites/10/2016/01/RocketSpace64-1440x960.jpg)
 
 위의 사진 처럼 70년도의 개발모습과 현재의 개발모습이 확연히 다른 느낌을 풍기는데요
