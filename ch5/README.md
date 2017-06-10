@@ -1,5 +1,5 @@
 # 그림
-![](./img/echo.png)
+![](./img/echo.png =550x550)
 
 # 코드
 
