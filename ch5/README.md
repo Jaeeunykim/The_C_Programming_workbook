@@ -27,7 +27,7 @@ argc가 적어도 1이상이 되어야 실행가능하다(1이면 매개변수�
 
 ------
 # 그림
-![](./img/find.png)
+![](./img/findp.png)
 
 ## 요구사항
 ```{r, engine='bash', count_lines}
@@ -41,7 +41,7 @@ monkey apple banana jenny
 
 
 ## 코드
-[find and pointer](./find_and_pointer.c)
+[find and pointer](./find_and_getpointer.c)
 
 ## 코드설명 
 'find and pointer'함수는 두개의 매개변수가 전달된다 
