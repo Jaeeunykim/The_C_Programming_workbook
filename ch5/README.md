@@ -2,7 +2,7 @@
 ![](./img/echo.png)
 
 # 코드
-[coed](./echo_j.c)
+[echo command code](./echo_j.c)
 
 # 코드설명
 
