@@ -1,5 +1,5 @@
 # 그림
-![](./img/echo.png =550x550) { width: 550px; hight: 550px; }
+![](./img/echo.png =550x550) { width: 550, height: 550 }
 
 # 코드
 
