@@ -3,7 +3,9 @@
 
 ## 요구사항
 ```{r, engine='bash', count_lines}
-echo hello world
+> echo hello world
+hello world
+
 ```
 'echo'라는 프로그램을 개발하려고 한다. 그림1에서 보는바와 같이 echo를 실행할 때 인자로'hello world'를 입력합니다. 그러면 echo 프로그램에 인자로 전달된 'hello world'가 출력되도록 하하면 됩니다.
 ## 구현방법
