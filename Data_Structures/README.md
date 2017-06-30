@@ -1,4 +1,5 @@
 # 그림
+![](./img/search.jpg)
 
 ## 요구사항
 ```{r, engine='bash', count_lines}
