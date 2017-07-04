@@ -46,6 +46,12 @@ int main()
 	int list[] = {8,5,6,9,4,19,7,2};
 	int low = 0;
 	int high = 7;
+	for(int i =0; i<8; i++)
+	{
+		printf("%d", list[i]);
+	}
+	printf("\n");
+
 	quicksort(list,low, high);
 	for(int i=0; i<8; i++)
 	{
