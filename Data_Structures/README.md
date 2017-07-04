@@ -59,16 +59,27 @@ partition함수는 인덱스i,j를 이용합니다 i는 배열의 맨앞쪽부�
 ## 요구사항
 ```{r, engine='bash', count_lines}
 From top to bottom 
+
 2
+
 From top to bottom
+
 5
+
 2
+
 From top to bottom
+
 7
+
 5
+
 2
+
 After call pop : From top to bottom
+
 5
+
 2
 ```
 push, pop연산을 이용하여 stack에 값을 추가하고 삭제하여 현재 스택의 값을 위와 같이 출력하면 됩니다 
