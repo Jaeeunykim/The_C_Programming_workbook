@@ -143,7 +143,7 @@ back이 loc보다 작아지면 그때 back자리에 alph(문자)를 넣어주고
 ------
 
 # 그림
-![](./img/binsearch)
+![](./img/binsearch.png)
 
 ## 요구사항
 
