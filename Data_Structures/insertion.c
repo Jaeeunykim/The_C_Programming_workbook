@@ -2,7 +2,7 @@
 
 char charlist[10]= "ABCEF";
 
-int insert(char name, int I)
+int insert(char alph, int loc)
 {
 	int back, N, M;
 	N = sizeof(charlist);
@@ -19,7 +19,7 @@ int insert(char name, int I)
 	else
 		return 0;
 
-	while(back >I)
+	while(back >loc)
 	{
 //배열의 요소들 옮기기
 	charlist[back] = charlist[back-1];
@@ -27,19 +27,29 @@ int insert(char name, int I)
 	back = back -1;
 	}
 
-	charlist[back] = name;
+	charlist[back] = alph;
 	M = M+1;
 	return M;		
 
 }
 
+void print_arr()
+{
+	for(int i= 0; i<10; i++)
+	{
+		printf("%c", charlist[i]);
+	}
+	printf("\n");
+}
+
 int main()
 {
+
+	print_arr();
+
 	char key[2] = "D";
-	printf("the size of charlist after insert: %d\n",insert(key[0], 4));
-	for(int i=0; i<10; i++)
-		printf("%c", charlist[i]);
-		printf("\n");
+	insert(key[0], 3);
+	print_arr();
 }
 
 			
