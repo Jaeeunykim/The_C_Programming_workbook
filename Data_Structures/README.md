@@ -26,7 +26,8 @@ search라는 함수는 인자로 찾을 값과 배열 그리고 그 배열의 �
 
 ------
 
-# 그림![](./img/quicksort.png)
+# 그림
+![](./img/quicksort.png)
 
 ## 요구사항
 ```{r, engine='bash', count_lines}
@@ -51,4 +52,43 @@ partition함수는 인덱스i,j를 이용합니다 i는 배열의 맨앞쪽부�
 정열이끝나면 pivot을 두파트 사이에 자리 하게 되고, 각 파트들도 더이상 나누어 질수 없을때까지 반복정렬 해나가게 됩니다
 
 
+------
+# 그림
+![] (./img/stack.png)
+
+## 요구사항
+```{r, engine='bash', count_lines}
+From top to bottom 
+2
+From top to bottom
+5
+2
+From top to bottom
+7
+5
+2
+After call pop : From top to bottom
+5
+2
+```
+push, pop연산을 이용하여 stack에 값을 추가하고 삭제하여 현재 스택의 값을 위와 같이 출력하면 됩니다 
+
+## 구현방법
+stack은 접시쌓기를 생각하시면 이해가 쉽습니다
+접시가 쌓이고 제일 나중에 쌓인 접시부터 사용되게 되는 것처럼 
+stack구조도 push연산을 통해 값이 추가 되고, pop연산을 통해 제일 위에 있는 값이 빠져나가게 됩니다. 이때 변수 top이 값이 들어올 자리와 값이 나갈자리를 가르키게 됩니다
+2,5,7를 push연산을 이용해 stack에 추가하고, pop연산을 통해 7를 빼낼 것입니다
+이때 stack의 상태를 확인하기 위해 연산할때마다 stack의 값들을 출력하면 됩니다
+
+# 코드
+[stack](./stack.c)
+
+## 코드설명 
+stack에 push연산을 이용하여 2,5,7를 추가하고, pop연산을 이용해 제일 위에 있는 값을 빼내고자 합니다
+
+return type이 int 형인 push함수는 값을 추가하는 함수입니다. 인자로 정수를 갖습니다.
+우선 stack이 가득 차있는 지 여부를 if문을 이용해서 확인하고 가득찼을 경우 메시지를 출력해줍니다. 가득차 있지 않다면 top을 1증가시킨후에 stack의 top자리에 인자로 들어온값을 할당해주고 그값을 반환합니다
+
+return type이 int형인 pop함수는 stack의 값을 빼내는 함수로 인자로 정수를 갖습니다
+stack이 비어있는 상태인지 if 문을 통해 확인하고 비어있지 않으면 현재 stack의 top번째 값을 인자에 할당해준뒤 top을 1감소시킵니다.
 
