@@ -1,47 +1,49 @@
 #include <stdio.h>
 
-#define true 1
-#define false 0
-
-int series[] = {3,4,5,7,11,14,17,21};
-int N = 9;
-
-int pos, first, last , mid, flag;
-
-int binSearch(int val)
+int binsearch(int arr[], int n, int tar)
 {
+	int pos, first, middle, last;
+
 	first = 0;
-	last = (N-1);
+	last = n-1;
+	middle = (first+last)/2;
 
-	while((first <= last) && (flag == false))
+	if(first>last)
 	{
-		mid = (first + last)/2;
+		printf("Not found! the target is not prsent\n");
+		return 0;
+	}
 
-		if(series[mid] == val)
+	while(first <= last)
+	{
+		if(arr[middle] == tar)
 		{
-			pos = mid;
-			flag = true;
+			pos = middle;
+			return pos;
 			break;
 		}
-
-		else if(series[mid] < val)
+		else if(arr[middle] < tar)
 		{
-			first = mid +1;
+			first = middle+1;
 		}
 		else 
-			last = mid -1;
+		{
+			last = middle-1;
+		}
+		middle = (first+last)/2;
 	}
-
-	if(flag == true)
-	{
-		printf("found the number :%d, at the array %dth\n", pos, series[pos]);
-	}
-	else
-		printf("not found the number\n");
-
 }
-
 int main()
 {
-	binSearch(7);
+	int series[] = {3,4,5,7,11,13,14,17,21};
+	int n = 9;
+	
+	printf("the series : ");
+	for(int i =0; i<9; i++)
+	{
+		printf("%d  ", series[i]);
+	}
+	printf("\nfind 14 at series\n");
+
+	printf("found at location : %d\n ",binsearch(series, n, 14));
 }
