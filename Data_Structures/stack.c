@@ -56,9 +56,6 @@ int main()
 	push(7);
 	print_stack();
 
-	push(9);
-	print_stack();
-
 	printf("after call pop : ");
 	pop(9);
 	print_stack();
