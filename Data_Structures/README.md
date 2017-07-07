@@ -173,7 +173,7 @@ binarysearch는 배열의 계속해서 반으로 나누어 찾고자 하는 값�
 ![](./img/queue.png)
 
 ## 요구사항
-```c++
+```{r, engine='bash', count_lines}
 Queue init : 0 0 0 0 0 | front : -100 | rear : -100
 Queue put 2: 2 0 0 0 0 | front : 0 | rear : 0
 Queue put 3: 2 3 0 0 0 | front : 0 | rear : 1
