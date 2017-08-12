@@ -23,5 +23,5 @@ The C Programming Language에서는 구현한 내용을 서술형으로 표현�
  - 그림(요구사항)
  - 코드 
  - 코드설명
- - 예제 
+ - example 
 
