@@ -1,63 +1,78 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-#define MAXSIZE 10
+// 스택링크드로 구현하기
+// 함수는 팝,푸쉬,
+// 구조체는 탑, 새로운노드
 
-int stack[MAXSIZE];
-int top = -1;
-
-int push(int val)
+typedef struct node
 {
-	if(top >= MAXSIZE)
+	int value;
+	struct node* next;
+}Node;
+
+Node* top = NULL;
+
+void push(int value)
+{
+	Node* n = (Node*)malloc(sizeof(Node));
+	n->next = NULL;
+	n->value = value;
+
+	if(top == NULL)
 	{
-		printf("Stack FUll!");
-		return 0;
+		top = n;
 	}
 	else
 	{
-		top = top+1;
-		stack[top] = val;
+		n->next = top;
+		top = n;
 	}
-	return stack[top];
 }
 
-int pop(int val)
+void pop()
 {
-	if(top <0)
+	Node* p = NULL;
+	p = top;
+
+	if(p == NULL)
 	{
-		printf("Stack is empty!");
-		return -1;
+		printf("This stack is Empty!\n");
 	}
-	else 
+	else
 	{
-		val = stack[top];
-		top = top-1;
+		printf("Popped value is %d \n", p->value);
+		p = p->next;
+		top = p;
 	}
-	return val;
 }
 
-void print_stack()
+void printStack()
 {
-
-	printf("From top to bottom \n");
-	for(int i=top; i >= 0; i--)
+	Node* q = NULL;
+	q = top;
+	
+	if(top == NULL)
 	{
-		printf("\n%d\n", stack[i]);
+		printf("Stack is Empty!\n");
+	}
+	for(q; q != NULL; q = q->next)
+	{
+		printf("Key : %d \n", q->value);
 	}
 }
+
+
 
 int main()
 {
-	push(2);
-	print_stack();
-
 	push(5);
-	print_stack();
-	
-	push(7);
-	print_stack();
+	push(4);
+	push(1);
+	push(10);
 
-	printf("after call pop : ");
-	pop(9);
-	print_stack();
+	printStack();
+
+	pop();
+	printStack();
 }
-
